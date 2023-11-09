@@ -13,8 +13,98 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--main-text, #fff);
+  font-family: var(--inter-font, sans-serif);
+  background-size: cover;
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  height: 100vh;
+  text-align: center;
+}
+
+.welcom-menu {
+  height: 368px;
+  border: 2px solid #000;
+  background: var(--bg-color);
+  margin-block-start: 102px;
+  font-family: var(--PressStart2P-font);
+}
+
+h3 {
+  font-family: var(--inter-font, sans-serif);
+  font-weight: var(--wgth);
+  line-height: 21.78px;
+  font-size: 18px;
+  margin: 3px 0 5px 10px;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--dark-tl);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  border: none;
+}
+
+.theme-menu {
+  text-align: left;
+}
+
+.card {
+  border: 2px solid #000;
+  background: var(--bg-color);
+  position: relative;
+}
+
+.card-header {
+}
+
+.card-image {
+  background: var(--bg-color);
+  position: relative;
+  width: 100%;
+}
+
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-description {
+  font-family: var(--inter-font, sans-serif);
+  font-weight: var(--wgth-main);
+  line-height: 21px;
+  margin: 25px;
+  margin-block-end: 27px;
+}
+
+.card-float-tags {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-weight: 400;
+  font-family: var(--PressStart2P-font);
+  -webkit-text-stroke: 0.5px var(--bg-color);
+  font-size: 14px;
+  color: var(--main-text);
+  opacity: 50%;
+}
+
+.text-place {
+  margin-block-end: 25px;
+}
+
+.floppy {
+  width: 40px;
 }
