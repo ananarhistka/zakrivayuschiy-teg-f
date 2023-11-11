@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
 }
 
 .header {
@@ -31,7 +32,7 @@
 }
 
 .welcom-menu {
-  height: 368px;
+  height: 39.5%;
   border: 2px solid #000;
   background: var(--bg-color);
   margin-block-start: 102px;
@@ -49,7 +50,7 @@ h3 {
 button {
   text-transform: uppercase;
   background-color: transparent;
-  color: var(--dark-tl);
+  color: var(--main-text);
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
@@ -58,7 +59,14 @@ button {
 }
 
 .theme-menu {
+  margin-block-start: 20px;
+  display: flex;
   text-align: left;
+  margin-left: 45%;
+}
+
+.theme-menu__item {
+  margin-block-end: 9px;
 }
 
 .card {
@@ -105,6 +113,46 @@ button {
   margin-block-end: 25px;
 }
 
-.floppy {
-  width: 40px;
+.card-footer {
+  display: flex;
+  justify-content: right;
+}
+
+.like {
+  border: 2px solid var(--main-text);
+  padding: 10px  35px;
+  font-family: var(--PressStart2P-font);
+  text-transform: none;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-diskette {
+  text-transform: none;
+  background-color: var(--bg-color);
+  font-family: var(--PressStart2P-font);
+  border: 2px solid var(--main-text);
+  padding: 15px 20px 15px 22px;;
+  line-height: 12.6px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.icon-diskette {
+  margin-right: 8px;
+}
+
+.icon {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  color: var(--main-text);
 }
