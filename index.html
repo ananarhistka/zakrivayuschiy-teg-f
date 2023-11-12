@@ -80,14 +80,30 @@
       </div>
     </main>
     <footer>
-        <button class="button-diskette">
-          <span class="icon icon-diskette">
-            <svg viewBox="0 0 40 40">
-              <use href="./svg/floppy.svg#diskette" />
-            </svg>
-          </span>
-          Сохранить на память
-        </button>
+      <button
+        class="button-diskette"
+        type="button"
+        onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id"
+      >
+        <span class="icon icon-diskette">
+          <svg viewBox="0 0 40 40">
+            <use href="./svg/floppy.svg#diskette" />
+          </svg>
+        </span>
+        Сохранить на память
+      </button>
+      <dialog id="dialog-id">
+        <span class="icon icon-diskette">
+          <svg viewBox="0 0 40 40">
+            <use href="./svg/floppy.svg#diskette" />
+          </svg>
+        </span>
+        <h2 class="title-popup">вставьте дискету, чтобы продолжить</h2>
+        <form>
+          <button class="like">ок</button>
+        </form>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>

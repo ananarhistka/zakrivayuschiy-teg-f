@@ -127,6 +127,15 @@ button {
   margin-right: 25px;
 }
 
+.like:focus {
+  outline: none;
+}
+
+.like:focus-visible {
+  box-shadow: 2px 2px 0 var(--main-text);
+  outline: none;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -155,4 +164,9 @@ footer {
   width: 21px;
   height: 21px;
   color: var(--main-text);
+}
+
+.title-popup {
+  font-family: var(--PressStart2P-font);
+  text-transform: uppercase; 
 }
