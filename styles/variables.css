@@ -6,6 +6,7 @@
   --wgth-main: 400;
   --main-text: #000;
   --bg-color: #fff;
+  --bg-gradient:  #E7E7E7, #1A1A1A; 
 }
 
 @media (max-width: 2500px){

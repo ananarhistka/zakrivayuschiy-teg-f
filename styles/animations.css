@@ -40,21 +40,17 @@
   transition: 0.3s;
 }
 
-.theme-menu__button::before {
+.theme-menu__button:disabled:before {
+  opacity: 0.6;
   position: absolute;
-  content: '';
-  top: 50%;
+  content: '▶';
   left: -20px;
+  top: 7px;
   transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  background-color: #000;
-  border-radius: 50%;
   animation: arrow-move 0.5s ease-in-out infinite alternate;
 }
 
-.theme-menu__button:active::before {
-  animation-play-state: running;
+.theme-menu__button:disabled {
   opacity: 0.6;
 }
 
@@ -71,4 +67,82 @@
   }
 }
 
+.card__like-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--main-text);
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+}
 
+.card__like-button:hover::before {
+  width: 100%;
+}
+
+.card__like-button::after {
+  content: '';
+  position: absolute;  
+  top: 0;
+  right: 0;  
+  width: 0;
+  height: 100%; 
+  background-color: #000; 
+  mix-blend-mode: difference;  
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.card__like-button:hover .button__text {
+  color: #fff;
+  z-index: 1;
+  mix-blend-mode: difference; 
+}
+
+.card__like-button:hover::after {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.button-diskette::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--main-text);
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.button-diskette:hover::before {
+  width: 100%;
+}
+
+.button-diskette::after {
+  content: '';
+  position: absolute;  
+  top: 0;
+  right: 0;  
+  width: 0;
+  height: 100%; 
+  background-color: #000; 
+  mix-blend-mode: difference;  
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.button-diskette:hover .button__text {
+  color: #fff;
+  z-index: 1;
+  mix-blend-mode: difference; 
+}
+
+.button-diskette:hover::after {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}

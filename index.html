@@ -75,24 +75,24 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card-footer">
-          <button class="card__like-button">Like</button>
+          <button class="card__like-button"> <span class="button__text">Like</span></button>
         </div>
       </div>
     </main>
     <footer>
-          <button
-            class="button-diskette"
-            type="button"
-            onclick="window['dialog-id'].showModal();"
-            aria-controls="dialog-id"
-          >
-              <span class="icon icon-diskette">
-                <svg viewBox="0 0 40 40">
-                  <use href="./svg/floppy.svg#diskette" />
-                </svg>
-              </span>
-            Сохранить на память
-          </button>
+      <button
+        class="button-diskette"
+        type="button"
+        onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id"
+      >
+        <span class="icon icon-diskett">
+          <svg viewBox="0 0 40 40">
+            <use href="./svg/floppy.svg#diskette" />
+          </svg>
+        </span>
+        <span class="button__text"> Сохранить на память </span>
+      </button>
       <dialog id="dialog-id">
         <div class="popup-icon-title">
           <div>
