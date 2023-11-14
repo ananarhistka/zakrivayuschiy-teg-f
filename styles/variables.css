@@ -30,6 +30,13 @@
     font-size: clamp(0.78125rem, 0.5832rem + 0.8451vw, 1.34375rem);
   }
 
+  .icon {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    color: var(--main-text);
+  }
+
   footer {
     margin-bottom: 103px;
   }
@@ -53,8 +60,19 @@
     text-transform: uppercase; 
     
   }
-  
-  .content-section {
+
+  .icon {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    color: var(--main-text);
+  }
+
+  .button-diskette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 
   footer {

@@ -12,3 +12,63 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+  outline: none;
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+
+.theme-menu__button::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  animation: arrow-move 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button:active::before {
+  animation-play-state: running;
+  opacity: 0.6;
+}
+
+@keyframes arrow-move {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-50%)
+    translateX(4px);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+
