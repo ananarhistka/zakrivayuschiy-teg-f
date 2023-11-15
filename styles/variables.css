@@ -17,7 +17,7 @@
   }
 
   .header-title {
-    font-size: clamp(2.8125rem, 2.4604rem + 1.5023vw, 3.8125rem);
+    font-size: clamp(3.0625rem, 2.6884rem + 1.5962vw, 4.125rem);
     font-weight: 400;
     margin-top: 19.5%;
     margin-block-end: 20px;
@@ -28,7 +28,7 @@
     line-height: 23px;
     margin-block-end: 20px;
     text-transform: uppercase; 
-    font-size: clamp(0.78125rem, 0.5832rem + 0.8451vw, 1.34375rem);
+    font-size: clamp(0.875rem, 0.6549rem + 0.939vw, 1.5rem);
   }
 
   .icon {
