@@ -1,16 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --inter-font: 'Inter';
-  --PressStart2P-font: 'PressStart2P';
+  --inter-font: "Inter";
+  --PressStart2P-font: "PressStart2P";
   --wgth: 700;
   --wgth-main: 400;
   --main-text: #000;
   --bg-color: #fff;
-  --bg-gradient:  #E7E7E7, #1A1A1A; 
+  --bg-gradient: #e7e7e7, #1a1a1a;
 }
 
-@media (max-width: 2500px){
-
+@media (max-width: 2500px) {
   .container {
     margin: 0 auto;
     width: clamp(375px, 100%, 700px);
@@ -22,12 +21,12 @@
     margin-top: 19.5%;
     margin-block-end: 20px;
   }
-  
+
   h2 {
     font-weight: 400;
     line-height: 23px;
     margin-block-end: 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: clamp(0.875rem, 0.6549rem + 0.939vw, 1.5rem);
   }
 
@@ -45,9 +44,9 @@
 
 @media (max-width: 375px) {
   .container {
-   width: 100%;
-   display: grid;
-   grid-template-columns: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
   }
 
   .header-title {
@@ -58,8 +57,7 @@
     font-weight: 400;
     line-height: 23px;
     margin-block-end: 20px;
-    text-transform: uppercase; 
-    
+    text-transform: uppercase;
   }
 
   .icon {
