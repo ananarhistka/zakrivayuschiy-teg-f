@@ -29,7 +29,7 @@
 
 .theme-menu__button::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: -1px;
   display: block;
@@ -43,7 +43,7 @@
 .theme-menu__button:disabled:before {
   opacity: 0.6;
   position: absolute;
-  content: '▶';
+  content: "▶";
   left: -20px;
   top: 7px;
   transform: translateY(-50%);
@@ -59,8 +59,7 @@
     transform: translateY(-50%);
   }
   50% {
-    transform: translateY(-50%)
-    translateX(4px);
+    transform: translateY(-50%) translateX(4px);
   }
   100% {
     transform: translateY(-50%);
@@ -68,7 +67,7 @@
 }
 
 .button-primery::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -83,14 +82,14 @@
 }
 
 .button-primery::after {
-  content: '';
-  position: absolute;  
+  content: "";
+  position: absolute;
   top: 0;
-  right: 0;  
+  right: 0;
   width: 0;
-  height: 100%; 
-  background-color: var(--main-text); 
-  mix-blend-mode: difference;  
+  height: 100%;
+  background-color: var(--main-text);
+  mix-blend-mode: difference;
   transition: width 0.5s ease-in-out;
   z-index: -1;
 }
@@ -105,7 +104,7 @@
 }
 
 .button-primery::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -119,11 +118,108 @@
   width: 100%;
 }
 
-.button-diskette:hover .icon  {
+.button-diskette:hover .icon {
   z-index: 1;
 }
 
 .button-diskette:hover .icon svg {
   stroke: var(--text-color-button);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
+}
+
+.core {
+  fill: none;
+  transition: fill 0.3s 0.05s;
+}
+
+.heart:hover .core {
+  fill: var(--main-text);
+}
+
+.heart:not(:hover) .core {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.heart {
+  fill: var(--main-text);
+  transition: fill 0.3s 0.03s;
+}
+
+.heart:hover {
+  fill: var(--main-text);
+}
+
+.main-body {
+  fill: var(--opaciti-color-heart);
+  transition: fill 0.3s 0.05s;
+}
+
+.heart:hover .main-body {
+  fill: var(--main-text);
+}
+
+.heart:not(:hover) .main-body {
+  opacity: 0;
+}
+/*___________________________*/
+
+.heart:active .core {
+  fill: var(--red-sparks);
+  transition: fill 0.3s 0.03s
+}
+
+.heart:active {
+  fill: var(--red-sparks);
+  transition: fill 0.3s 0.03s;
+}
+
+.heart:active {
+  fill: var(--red-sparks);
+  transform: scale(1.1);
+}
+
+.heart:active .main-body {
+  fill: var(--red-sparks);
+}
+
+.heart:active .contour {
+  fill: var(--red-sparks);
+  transition: fill 0.6s 0.3s;
+}
+
+.heart:active, .heart.is-liked {
+  animation: scaleHeart 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparks2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.card__icon-button:active .sparks {
+  animation: sparks2 0.3s 0.3s ease-in both;
 }

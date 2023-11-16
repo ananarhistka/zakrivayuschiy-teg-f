@@ -6,37 +6,42 @@
 */
 .theme-dark {
   --gradient-last: #007f0c, #004306;
-  --bg-gradient:  #000; 
-  --main-text: #00CC14;
+  --bg-gradient: #000;
+  --main-text: #00cc14;
   --bg-color: #000;
   --wgth: 785;
   --wgth-main: 465;
   --text-color-button: #000;
+  --opaciti-color-heart: #68e975;
 }
 
 :root.theme-dark {
   --gradient-last: #007f0c, #004306;
-  --main-text: #00CC14;
+  --main-text: #00cc14;
   --bg-color: #000;
   --wgth: 785;
   --wgth-main: 465;
   --text-color-button: #000;
-  --bg-gradient:  #000; 
+  --bg-gradient: #000;
+  --opaciti-color-heart: #68e975;
 }
 
 .theme-light {
-  --gradient-last:  #E7E7E7, #1A1A1A;
-  --bg-gradient: #d3d3d3; 
+  --gradient-last: #e7e7e7, #1a1a1a;
+  --bg-gradient: #d3d3d3;
   --main-text: #000;
   --bg-color: #fff;
   --wgth: 700;
   --wgth-main: 400;
   --text-color-button: #fff;
+  --red-sparks: #ff0000;
+  --opaciti-color-heart: #ccc;
 }
 
 :root.theme-light {
-  --gradient-last:  #E7E7E7, #1A1A1A;
-  --bg-gradient:  #d3d3d3; 
+  --opaciti-color-heart: #ccc;
+  --gradient-last: #e7e7e7, #1a1a1a;
+  --bg-gradient: #d3d3d3;
   --main-text: #000;
   --bg-color: #fff;
   --wgth: 700;
@@ -46,8 +51,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --gradient-last:  #E7E7E7, #1A1A1A;
-    --bg-gradient:  #d3d3d3; 
+    --opaciti-color-heart: #ccc;
+    --gradient-last: #e7e7e7, #1a1a1a;
+    --bg-gradient: #d3d3d3;
     --main-text: #000;
     --bg-color: #fff;
     --wgth: 700;

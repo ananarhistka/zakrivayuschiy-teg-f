@@ -23,10 +23,21 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin: 0;
-  background-image: 
-  repeating-linear-gradient(to right, transparent, transparent 2px, var(--bg-gradient) 2px, var(--bg-gradient) 4px),
-  repeating-linear-gradient(to bottom, transparent, transparent 2px, var(--bg-gradient) 2px, var(--bg-gradient) 4px),
-  linear-gradient(to bottom, var( --gradient-last));
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 2px,
+      var(--bg-gradient) 2px,
+      var(--bg-gradient) 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 2px,
+      var(--bg-gradient) 2px,
+      var(--bg-gradient) 4px
+    ),
+    linear-gradient(to bottom, var(--gradient-last));
   height: 100vh;
 }
 
@@ -111,11 +122,15 @@ p {
 }
 
 .card-float-tags {
-  text-shadow: -1px 0 0 var(--bg-color), 0 1px var(--bg-color), 1px 0 var(--bg-color),0 -1px var(--bg-color);
+  text-shadow: -1px 0 0 var(--bg-color), 0 1px var(--bg-color),
+    1px 0 var(--bg-color), 0 -1px var(--bg-color);
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 0.5px var(--bg-color)) or ( -webkit-text-stroke: 0.5px var(--bg-color))) {
+@supports (
+  (text-stroke: 0.5px var(--bg-color)) or
+    (-webkit-text-stroke: 0.5px var(--bg-color))
+) {
   .card-float-tags {
     position: absolute;
     top: 25px;
@@ -144,7 +159,8 @@ p {
 
 .card__like-button {
   border: 2px solid var(--main-text);
-  padding: 10px 35px;
+  width: 130px;
+  height: 38px;
   font-family: var(--PressStart2P-font);
   text-transform: none;
   position: relative;
@@ -162,18 +178,23 @@ p {
   transition: 0.3s;
 }
 
-.button-heart {
+.card__icon-button{
   outline: none;
   cursor: pointer;
 }
 
-.button-heart:focus {
+.card__icon-button:focus {
   outline: none;
 }
 
-.button-heart:focus-visible {
+.card__icon-buttont:focus-visible {
   outline: 2px solid var(--main-text);
   padding: 4px;
+  transition: 0.3s ease;
+}
+
+.sparks {
+  opacity: 0;
 }
 
 footer {
@@ -268,4 +289,4 @@ dialog::backdrop {
   font-size: 14px;
   padding: 9px 125px;
   margin-block-start: 18px;
-  }
+}
