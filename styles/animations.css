@@ -123,12 +123,17 @@
 }
 
 .button-diskette:hover .icon svg {
-  stroke: var(--text-color-button);
+  fill: var(--text-color-button);
   mix-blend-mode: difference;
 }
 
-.core {
+.heart .core {
   fill: none;
+  transition: fill 0.3s 0.05s;
+}
+
+.heart .main-body {
+  fill: var(--opaciti-color-heart);
   transition: fill 0.3s 0.05s;
 }
 
@@ -150,11 +155,6 @@
   fill: var(--main-text);
 }
 
-.main-body {
-  fill: var(--opaciti-color-heart);
-  transition: fill 0.3s 0.05s;
-}
-
 .heart:hover .main-body {
   fill: var(--main-text);
 }
@@ -174,23 +174,23 @@
   transition: fill 0.3s 0.03s;
 }
 
-.heart:active {
-  fill: var(--red-sparks);
-  transform: scale(1.1);
-}
-
 .heart:active .main-body {
   fill: var(--red-sparks);
 }
 
 .heart:active .contour {
   fill: var(--red-sparks);
-  transition: fill 0.6s 0.3s;
+  transition: fill 0.3s 0.06s;
 }
 
-.heart:active, .heart.is-liked {
-  animation: scaleHeart 0.3s ease-in-out;
-  animation-fill-mode: forwards;
+.like-icon.is-liked .heart {
+  animation: scaleHeart 0.3s 0.1s ease-in 1 alternate;
+  transform-origin: center center;
+}
+
+.like-icon.is-liked .contour,  .like-icon.is-liked .main-body,  .like-icon.is-liked .core {
+  fill: var(--red-sparks);
+  opacity: 1;
 }
 
 @keyframes scaleHeart {
@@ -198,7 +198,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -208,18 +208,16 @@
 @keyframes sparks2 {
   0% {
     opacity: 0;
-    transform: scale(0);
   }
   50% {
     opacity: 1;
-    transform: scale(1.5);
   }
   100% {
     opacity: 0;
-    transform: scale(0);
   }
 }
 
-.card__icon-button:active .sparks {
-  animation: sparks2 0.3s 0.3s ease-in both;
+.like-icon.is-liked .sparks {
+  animation: sparks2 0.3s ease-in 0.3s 1 alternate;
 }
+

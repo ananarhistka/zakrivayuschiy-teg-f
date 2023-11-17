@@ -13,6 +13,7 @@
   --wgth-main: 465;
   --text-color-button: #000;
   --opaciti-color-heart: #68e975;
+  --red-sparks: #ff0000;
 }
 
 :root.theme-dark {
@@ -24,6 +25,7 @@
   --text-color-button: #000;
   --bg-gradient: #000;
   --opaciti-color-heart: #68e975;
+  --red-sparks: #ff0000;
 }
 
 .theme-light {
