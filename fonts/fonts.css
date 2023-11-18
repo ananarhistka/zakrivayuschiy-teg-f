@@ -13,15 +13,3 @@
   font-weight: 400 785;
   font-display: swap;
 }
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: "Inter";
-  }
-}
-
-@supports (font-variation-settings: normal) {
-  .card-header {
-    font-family: "Inter", sans-serif;
-  }
-}
