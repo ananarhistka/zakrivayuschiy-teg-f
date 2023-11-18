@@ -2,13 +2,10 @@
 :root {
   --inter-font: "Inter";
   --PressStart2P-font: "PressStart2P";
-  --wgth: 700;
-  --wgth-main: 400;
   --main-text: #000;
   --bg-color: #fff;
   --bg-gradient: #e7e7e7, #1a1a1a;
 }
-
 
 @media (max-width: 375px) {
   .container {
@@ -39,9 +36,7 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    margin-bottom: 102px;
   }
 
-  footer {
-    margin-bottom: 100px;
-  }
 }

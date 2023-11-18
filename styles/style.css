@@ -49,7 +49,7 @@
 .welcom-menu {
   border: 2px solid var(--main-text);
   background: var(--bg-color);
-  margin-block-start: 102px;
+  margin-block-start: 14%;
   font-family: var(--PressStart2P-font);
 }
 
@@ -104,7 +104,7 @@ h3 {
 .header-title {
   font-size: clamp(3.0625rem, 2.6884rem + 1.5962vw, 4.125rem);
   font-weight: 400;
-  margin-top: 19.5%;
+  margin-top: 20%;
   margin-block-end: 20px;
 }
 
@@ -141,10 +141,10 @@ h3 {
 
 .card-description {
   font-family: var(--inter-font, sans-serif);
-  font-weight: var(--wgth-main);
   line-height: 21px;
   margin: 25px;
-  margin-block-end: 27px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 p {
@@ -184,8 +184,9 @@ p {
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 12px;
-  padding: 25px;
+  gap: 8px;
+  padding-bottom: 22px;
+  padding-right: 25px;
 }
 
 .card__like-button {
@@ -260,7 +261,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 103px;
 }
 
 .button-diskette {
@@ -277,6 +277,7 @@ footer {
   position: relative;
   overflow: hidden;
   gap: 8px;
+  margin-bottom: 105px;
 }
 
 .button-diskette:focus {
