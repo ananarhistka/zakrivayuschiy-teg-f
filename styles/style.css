@@ -132,8 +132,8 @@ h3 {
   background: var(--bg-color);
   position: relative;
   width: 100%;
-  border-bottom: 2px solid var(--main-text);
   z-index: 1;
+  border-bottom: 2px solid var(--main-text);
   border-top: 2px solid var(--main-text);
 }
 
