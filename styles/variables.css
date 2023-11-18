@@ -7,14 +7,84 @@
   --bg-gradient: #e7e7e7, #1a1a1a;
 }
 
+@media (max-width: 2500px) {
+  .header-title {
+    font-size: clamp(3.0625rem, 2.6884rem + 1.5962vw, 4.125rem);
+    font-weight: 400;
+    margin-top: 20%;
+    margin-block-end: 20px;
+  }
+
+  .welcom-menu {
+    border: 2px solid var(--main-text);
+    background: var(--bg-color);
+    margin-block-start: 14%;
+    font-family: var(--PressStart2P-font);
+  }
+
+  .theme-menu {
+    margin-block-end: 25px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 2%;
+  }
+
+  .close-teg {
+    font-weight: 400;
+    line-height: 23px;
+    margin-block-end: 20px;
+    text-transform: uppercase;
+    font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  }
+
+  .card {
+    border: 2px solid var(--main-text);
+    background: var(--bg-color);
+    position: relative;
+    margin-block-end: 53px;
+  }
+
+  .icon {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    color: var(--main-text);
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 22px;
+    padding-right: 25px;
+  }
+}
+
 @media (max-width: 375px) {
   .container {
-    width: 100%;
+    width: 100% !important;
     grid-template-columns: 100%;
+  }
+
+  .theme-menu {
+    margin-left: 6%;
+    margin-block-end: 20px;
+
+  }
+
+  .close-teg {
+    margin-block-end: 16px;
   }
 
   .header-title {
     margin-top: 32%;
+    font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
+  }
+
+  .welcom-menu {
+    margin-block-start: 27%;
   }
 
   h2 {
@@ -37,5 +107,14 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 102px;
+  }
+
+  .card {
+    margin-block-end: 50px;
+  }
+
+  .card-footer {
+    gap: 5px;
+    padding-bottom: 20px;
   }
 }
