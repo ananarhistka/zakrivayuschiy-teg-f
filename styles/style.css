@@ -90,7 +90,7 @@ h3 {
 }
 
 .card {
-  border: 2px solid #000;
+  border: 2px solid var(--main-text);
   background: var(--bg-color);
   position: relative;
   margin-block-end: 52px;
@@ -126,9 +126,11 @@ h3 {
 .card-image img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.card-image  {
+.card-image {
   background: var(--bg-color);
   position: relative;
   width: 100%;
@@ -223,19 +225,18 @@ p {
 }
 
 .grayscale {
-  filter: grayscale(.75);
+  filter: grayscale(0.75);
 }
 
 .saturate {
   filter: saturate(300%);
 }
 
-.hue-rotate{
+.hue-rotate {
   filter: hue-rotate(30deg);
-
 }
 
-.invert{
+.invert {
   filter: invert(80%);
 }
 
@@ -251,7 +252,6 @@ p {
   filter: hue-rotate(100deg) blur(3px) sepia(30%) opacity(90%);
 }
 
-
 .sparks {
   opacity: 0;
 }
@@ -260,6 +260,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 103px;
 }
 
 .button-diskette {
@@ -347,7 +348,6 @@ footer {
   position: relative;
   overflow: hidden;
   border: 2px solid var(--main-text);
-  font-family: var(--PressStart2P-font);
   text-transform: uppercase;
   font-size: 14px;
   margin-block-start: 18px;
@@ -355,8 +355,4 @@ footer {
   width: 294px;
   align-items: center;
   justify-content: center;
-}
-
-footer {
-  margin-bottom: 103px;
 }

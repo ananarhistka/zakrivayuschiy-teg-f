@@ -66,17 +66,6 @@
   }
 }
 
-.button-primery::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--main-text);
-  transition: width 0.5s ease-in-out;
-}
-
 .button-primery:hover::before {
   width: 100%;
 }
@@ -166,7 +155,7 @@
 
 .heart:active .core {
   fill: var(--red-sparks);
-  transition: fill 0.3s 0.03s
+  transition: fill 0.3s 0.03s;
 }
 
 .heart:active {
@@ -188,7 +177,9 @@
   transform-origin: center center;
 }
 
-.like-icon.is-liked .contour,  .like-icon.is-liked .main-body,  .like-icon.is-liked .core {
+.like-icon.is-liked .contour,
+.like-icon.is-liked .main-body,
+.like-icon.is-liked .core {
   fill: var(--red-sparks);
   opacity: 1;
 }
@@ -220,4 +211,3 @@
 .like-icon.is-liked .sparks {
   animation: sparks2 0.3s ease-in 0.3s 1 alternate;
 }
-
