@@ -12,6 +12,8 @@
   --text-color-button: #000;
   --opaciti-color-heart: #68e975;
   --red-sparks: #ff0000;
+  --wght-text: 465;
+  --wght-title: 785;
 }
 
 :root.theme-dark {
@@ -22,6 +24,8 @@
   --bg-gradient: #000;
   --opaciti-color-heart: #68e975;
   --red-sparks: #ff0000;
+  --wght-text: 465;
+  --wght-title: 785;
 }
 
 .theme-light {
@@ -32,6 +36,8 @@
   --text-color-button: #fff;
   --red-sparks: #ff0000;
   --opaciti-color-heart: #ccc;
+  --wght-text: 400;
+  --wght-title: 700;
 }
 
 :root.theme-light {
@@ -41,6 +47,8 @@
   --main-text: #000;
   --bg-color: #fff;
   --text-color-button: #fff;
+  --wght-text: 400;
+  --wght-title: 700;
 }
 
 @media (prefers-color-scheme: light) {
@@ -51,5 +59,7 @@
     --main-text: #000;
     --bg-color: #fff;
     --text-color-button: #fff;
+    --wght-text: 400;
+    --wght-title: 700;
   }
 }
