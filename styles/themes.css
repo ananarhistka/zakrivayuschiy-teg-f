@@ -4,18 +4,6 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-.theme-dark {
-  --gradient-last: #007f0c, #004306;
-  --bg-gradient: #000;
-  --main-text: #00cc14;
-  --bg-color: #000;
-  --text-color-button: #000;
-  --opaciti-color-heart: #68e975;
-  --red-sparks: #ff0000;
-  --wght-text: 465;
-  --wght-title: 785;
-}
-
 :root.theme-dark {
   --gradient-last: #007f0c, #004306;
   --main-text: #00cc14;
@@ -28,18 +16,6 @@
   --wght-title: 785;
 }
 
-.theme-light {
-  --gradient-last: #e7e7e7, #1a1a1a;
-  --bg-gradient: #d3d3d3;
-  --main-text: #000;
-  --bg-color: #fff;
-  --text-color-button: #fff;
-  --red-sparks: #ff0000;
-  --opaciti-color-heart: #ccc;
-  --wght-text: 400;
-  --wght-title: 700;
-}
-
 :root.theme-light {
   --opaciti-color-heart: #ccc;
   --gradient-last: #e7e7e7, #1a1a1a;
@@ -47,6 +23,7 @@
   --main-text: #000;
   --bg-color: #fff;
   --text-color-button: #fff;
+  --red-sparks: #ff0000;
   --wght-text: 400;
   --wght-title: 700;
 }
@@ -59,6 +36,7 @@
     --main-text: #000;
     --bg-color: #fff;
     --text-color-button: #fff;
+    --red-sparks: #ff0000;
     --wght-text: 400;
     --wght-title: 700;
   }

@@ -39,7 +39,7 @@
     ),
     linear-gradient(to bottom, var(--gradient-last));
   height: 100vh;
-  font-variation-settings: 'wdth' var(--wght-text);
+  font-variation-settings: "wdth" var(--wght-text);
 }
 
 .header {
@@ -59,7 +59,30 @@ button {
   padding: 0;
 }
 
+button:disabled {
+  pointer-events: none;
+}
+
 .theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  outline: none;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+  outline: none;
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:disabled {
   opacity: 0.6;
 }
 
@@ -80,7 +103,7 @@ h3 {
   font-style: normal;
   font-weight: var(--wght-title);
   line-height: normal;
-  font-variation-settings: 'wght' var(--wght-title);
+  font-variation-settings: "wght" var(--wght-title);
 }
 
 .container {
@@ -121,6 +144,14 @@ p {
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
   mix-blend-mode: hard-light;
   z-index: 1;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-weight: 400;
+  font-family: var(--PressStart2P-font);
+  font-size: 14px;
+  color: var(--main-text);
+  mix-blend-mode: hard-light;
 }
 
 @supports (
@@ -128,16 +159,8 @@ p {
     (-webkit-text-stroke: 0.5px var(--bg-color))
 ) {
   .card-float-tags {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-weight: 400;
-    font-family: var(--PressStart2P-font);
     -webkit-text-stroke: 0.5px var(--bg-color);
     text-shadow: none;
-    font-size: 14px;
-    color: var(--main-text);
-    mix-blend-mode: hard-light;
   }
 }
 
@@ -171,13 +194,17 @@ p {
   cursor: pointer;
 }
 
+.like-icon {
+  width: 37px;
+  height: 36px;
+}
+
 .card__icon-button:focus {
   outline: none;
 }
 
-.card__icon-buttont:focus-visible {
+.card__icon-button:focus-visible {
   outline: 2px solid var(--main-text);
-  padding: 4px;
   transition: 0.3s ease;
 }
 
@@ -312,4 +339,126 @@ footer {
   width: 294px;
   align-items: center;
   justify-content: center;
+}
+
+.btn-footer-popup:focus {
+  outline: none;
+}
+
+.btn-footer-popup:focus-visible {
+  box-shadow: 2px 2px 0 var(--main-text);
+  outline: none;
+  transition: 0.3s;
+}
+
+@media (max-width: 3000px) {
+  .header-title {
+    font-size: clamp(3.0625rem, 2.6884rem + 1.5962vw, 4.125rem);
+    font-weight: 400;
+    margin-top: 20%;
+    margin-block-end: 20px;
+  }
+
+  .welcom-menu {
+    border: 2px solid var(--main-text);
+    background: var(--bg-color);
+    margin-block-start: 14%;
+    font-family: var(--PressStart2P-font);
+  }
+
+  .theme-menu {
+    margin-block-end: 25px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 2%;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    line-height: 23px;
+    margin-block-end: 20px;
+    text-transform: uppercase;
+    font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  }
+
+  .card {
+    border: 2px solid var(--main-text);
+    background: var(--bg-color);
+    position: relative;
+    margin-block-end: 53px;
+  }
+
+  .icon {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    color: var(--main-text);
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 22px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100% !important;
+    grid-template-columns: 100%;
+  }
+
+  .theme-menu {
+    margin-left: 6%;
+    margin-block-end: 24px;
+  }
+
+  .subtitle {
+    margin-block-end: 17px;
+  }
+
+  .header-title {
+    margin-top: 32%;
+    font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
+    margin-block-end: 17px;
+  }
+
+  .welcom-menu {
+    margin-block-start: 27%;
+  }
+
+  h2 {
+    font-weight: 400;
+    line-height: 23px;
+    margin-block-end: 20px;
+    text-transform: uppercase;
+  }
+
+  .icon {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    color: var(--main-text);
+  }
+
+  .button-diskette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 102px;
+  }
+
+  .card {
+    margin-block-end: 50px;
+  }
+
+  .card-footer {
+    gap: 5px;
+    padding-bottom: 20px;
+  }
 }
