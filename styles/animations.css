@@ -69,8 +69,8 @@
   color: var(--text-color-button);
 }
 
-.button-primery:hover .icon .icon-diskett{
-  fill: var( --bg-color);
+.button-primery:hover .icon .icon-diskett {
+  fill: var(--bg-color);
 }
 
 .icon {
@@ -107,22 +107,23 @@
 }
 
 .heart .core {
-  fill: none;
-  transition: fill 0.3s 0.05s;
-}
-
-.heart .main-body {
-  fill: var(--opaciti-color-heart);
-  transition: fill 0.3s 0.05s;
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .heart:hover .core {
   fill: var(--main-text);
+  transition: fill 0.3s 0.03s linear;
 }
 
-.heart:not(:hover) .core {
-  opacity: 0;
-  transition: opacity 0.3s;
+.heart .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.heart:hover .main-body {
+  fill: var(--main-text);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .heart {
@@ -134,45 +135,35 @@
   fill: var(--main-text);
 }
 
-.heart:hover .main-body {
-  fill: var(--main-text);
-}
-
-.heart:not(:hover) .main-body {
-  opacity: 0;
-}
 /*___________________________*/
-/*
-.like-icon {
-  transition: fill 0.3s 0.03s;
-}
 
-.like-icon:active .main-body {
-  fill: var(--red-sparks);
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon:active .core {
   fill: var(--red-sparks);
-  transition: fill 0.3s 0.03s;
-}*/
-
-.heart:active .core {
-  fill: var(--red-sparks);
-  transition: fill 0.3s 0.03s;
+  transition: fill 0.3s linear;
 }
 
-.heart:active {
-  fill: var(--red-sparks);
-  transition: fill 0.3s 0.03s;
-}
-
-.heart:active .main-body {
+.like-icon:active {
   fill: var(--red-sparks);
 }
 
-.heart:active .contour {
+.like-icon:active .main-body {
   fill: var(--red-sparks);
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--red-sparks);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--red-sparks);
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {
@@ -212,5 +203,5 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks2 0.3s ease-in 0.3s 1 alternate;
+  animation: sparks2 0.3s ease-in 0.3s;
 }
