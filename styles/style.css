@@ -151,7 +151,6 @@ p {
   font-family: var(--PressStart2P-font);
   font-size: 14px;
   color: var(--main-text);
-  mix-blend-mode: hard-light;
 }
 
 @supports (
