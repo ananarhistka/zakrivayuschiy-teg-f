@@ -38,13 +38,11 @@
       var(--bg-gradient) 4px
     ),
     linear-gradient(to bottom, var(--gradient-last));
-  height: 100vh;
   font-variation-settings: "wdth" var(--wght-text);
 }
 
 .header {
   text-align: center;
-  height: 100vh;
 }
 
 button {
@@ -91,7 +89,7 @@ h3 {
   font-weight: var(--wght-title);
   line-height: 21.78px;
   font-size: 18px;
-  margin: 3px 0 5px 10px;
+  margin: 3px 10px 5px 10px;
 }
 
 .theme-menu__item:not(:last-child) {
@@ -136,21 +134,7 @@ h3 {
 }
 
 p {
-  margin-bottom: 27px;
-}
-
-.card-float-tags {
-  text-shadow: -1px 0 0 var(--bg-color), 0 1px var(--bg-color),
-    1px 0 var(--bg-color), 0 -1px var(--bg-color);
-  mix-blend-mode: hard-light;
-  z-index: 1;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-weight: 400;
-  font-family: var(--PressStart2P-font);
-  font-size: 14px;
-  color: var(--main-text);
+  margin-bottom: 26px;
 }
 
 @supports (
@@ -361,8 +345,9 @@ footer {
   .welcom-menu {
     border: 2px solid var(--main-text);
     background: var(--bg-color);
-    margin-block-start: 14%;
+    margin-block-start: 102px;
     font-family: var(--PressStart2P-font);
+    margin-block-end: 101px;
   }
 
   .theme-menu {
@@ -386,6 +371,20 @@ footer {
     background: var(--bg-color);
     position: relative;
     margin-block-end: 53px;
+  }
+
+  .card-float-tags {
+    text-shadow: -1px 0 0 var(--bg-color), 0 1px var(--bg-color),
+      1px 0 var(--bg-color), 0 -1px var(--bg-color);
+    mix-blend-mode: hard-light;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-weight: 400;
+    font-family: var(--PressStart2P-font);
+    font-size: 14px;
+    color: var(--main-text);
   }
 
   .icon {
@@ -427,7 +426,7 @@ footer {
   }
 
   .welcom-menu {
-    margin-block-start: 27%;
+    margin-block-start: 102px;
   }
 
   h2 {
@@ -453,11 +452,16 @@ footer {
   }
 
   .card {
-    margin-block-end: 50px;
+    margin-block-end: 55.3px;
+  }
+
+  .card-float-tags {
+    top: 23px;
+    right: 11px;
   }
 
   .card-footer {
     gap: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
   }
 }
