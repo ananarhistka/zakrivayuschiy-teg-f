@@ -2,7 +2,28 @@
 :root {
   --inter-font: "Inter";
   --PressStart2P-font: "PressStart2P";
+  --opaciti-color-heart: #ccc;
+  --gradient-last: #e7e7e7, #1a1a1a;
+  --bg-gradient: #d3d3d3;
   --main-text: #000;
   --bg-color: #fff;
-  --bg-gradient: #e7e7e7, #1a1a1a;
+  --text-color-button: #fff;
+  --red-sparks: #ff0000;
+  --wght-text: 400;
+  --wght-title: 700;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 2px,
+    var(--bg-gradient) 2px,
+    var(--bg-gradient) 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    var(--bg-gradient) 2px,
+    var(--bg-gradient) 4px
+  ),
+  linear-gradient(to bottom, var(--gradient-last));
 }
