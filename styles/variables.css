@@ -1,5 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root {
+:root.auto {
   --inter-font: "Inter";
   --PressStart2P-font: "PressStart2P";
   --opaciti-color-heart: #ccc;
@@ -11,19 +11,4 @@
   --red-sparks: #ff0000;
   --wght-text: 400;
   --wght-title: 700;
-  background-image: repeating-linear-gradient(
-    to right,
-    transparent,
-    transparent 2px,
-    var(--bg-gradient) 2px,
-    var(--bg-gradient) 4px
-  ),
-  repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 2px,
-    var(--bg-gradient) 2px,
-    var(--bg-gradient) 4px
-  ),
-  linear-gradient(to bottom, var(--gradient-last));
 }
